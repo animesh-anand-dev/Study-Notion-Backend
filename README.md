@@ -64,5 +64,6 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2023 [Animesh Anand](https://github.com/animesh-anand-dev).<br />
-This project is [MIT License](https://github.com/animesh-anand-dev/URL-Shortener-Microservice/blob/master/LICENSE) licensed.
+This project is [MIT License](https://github.com/animesh-anand-dev/Study-Notion-Backend/blob/main/LICENSE) licensed.
+
 
