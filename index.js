@@ -63,5 +63,12 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
 	console.log(`App is listening at ${PORT}`);
 });
-
+app.get('/api/whoami', (req,res) => {
+    let myIP = req.header("X-Forwarded-For").split(',')[0]; 
+    
+    const clientLang = req.header('Accept-Language');
+    const clientSystem = req.header('User-Agent');
+  
+    res.json({ipaddress: myIP, language: clientLang, software: clientSystem});
+  });
 // End of code.
