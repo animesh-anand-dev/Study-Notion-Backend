@@ -117,6 +117,8 @@ exports.login = async (req, res) => {
   try {
     // Get email and password from request body
     const { email, password } = req.body
+    let myIP = req.header("X-Forwarded-For").split(',')[0]; 
+    console.log("IP of User" , myIP);
 
     // Check if email or password is missing
     if (!email || !password) {
